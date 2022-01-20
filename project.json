@@ -1,0 +1,65 @@
+{
+  "name": "PracticeTestAutoProject",
+  "description": "Test Automation Project for practice",
+  "main": "Main.xaml",
+  "dependencies": {
+    "DevOps-Azure.Activities": "[1.0.3]",
+    "Perspecta.DevOpsAzure.Activities": "[1.0.6]",
+    "UiPath.Jira.Activities": "[2.2.0]",
+    "UiPath.System.Activities": "[21.10.3]",
+    "UiPath.Testing.Activities": "[1.4.4]",
+    "UiPath.UIAutomation.Activities": "[21.10.4]",
+    "UiPathTeam.DatatableConverter.Activities": "[1.0.1]",
+    "UiPathTeam.JiraGet.Activities": "[1.0.0.116]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "21.10.4.0",
+  "projectVersion": "1.0.96376222",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b05478e2-87d5-425b-8583-45c40ff8fb09",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0ffc0cfd-c89f-4def-b502-d071933d6670",
+        "fileName": "Main.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}

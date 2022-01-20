@@ -1,0 +1,282 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_DemoWebShop" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1048,3004" sap2010:WorkflowViewState.IdRef="Login_DemoWebShop_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ubt="clr-namespace:UiPath.BAF.Telemetry;assembly=UiPath.Jira" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uja="clr-namespace:UiPath.Jira.Activities;assembly=UiPath.Jira.Activities" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=UiPath.Jira.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="66">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>Atlassian.Jira</x:String>
+      <x:String>UiPath.BAF.Telemetry</x:String>
+      <x:String>UiPath.Jira.Activities</x:String>
+      <x:String>UiPath.Jira.Activities.Activities</x:String>
+      <x:String>UiPath.Jira.Activities.Enums.JiraApplicationScope</x:String>
+      <x:String>System.Net</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="62">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>Atlassian.Jira</AssemblyReference>
+      <AssemblyReference>UiPath.Jira</AssemblyReference>
+      <AssemblyReference>UiPath.Jira.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Login_DemoWebShop" sap:VirtualizedContainerService.HintSize="1058,2939.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Demo Web Shop" sap:VirtualizedContainerService.HintSize="1016,2847.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="23f95b24-9e99-44f0-a1ef-6d646df6b820" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="982,2630" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="invalidEmail" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="940,157.333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="23f95b24-9e99-44f0-a1ef-6d646df6b820" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://demowebshop.tricentis.com/" DesignTimeRectangle="1303, 222, 64, 29" ElementType="Text" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl aaname='Log in' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log in' tag='A' type='' check:text='Log in' /&gt;" Guid="ba2d106a-5b11-4600-99a6-570e59c4043a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAhCAYAAABgKg1bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJNSURBVGhD7ZaxSyNBFIcF/S+0FNJZWC7pDqsgV4ikOq6QVNaWYhHYRkgjpNQu6RII4rIYEhaWi0dADUoiWMTmyHEgOU7EwsDv3uyOJvvWPTUma/acDxayb99sZr6ZebNTUHhQQhhKCEMJYSghDCWEMTIhF+kZFKd1XMj796ODepL6kszhl4y8BiWE8R8KeRvvIuTPeQHWWpzyRZt5lNZ0HLfu5NM+13YW5cS8m7fwBbbddf/nn7PPV4i8T9fofRmY2sP7llHJt3Dr5PQJXcjtkY6S6NDnTdSNCprFLMxPc9Q2DuuoL+UxL6k7eY2dFPZn4yhpIjaEEI3axlZh5Q/QNHKwkkLMHCpV70SELOQE9qLb2Z8y4nDfwrcExRO7+OEEZN5Xb15f0hBCpldRbzsBSQ3WLMVp5QwSrpDTjDOg8qF/e/wupqj9Er5f0k1gXhv1lSGFrLBJ8OW5hCuEZvhx0Bzn2QxtG6Bnb9JvPqMuQ9cQX5sICbk73PggQp7dMlJCYF7Q4AaJkpDniqqWxZUTeLqo9i53sU+iIiRkGeXtDOwnrobcJi8+dquijogOu8fu2d4GHbuUJ06G6AgJvkRteMD/YZbBWdu/jbwfUuLD7CRgcINMiJBwkMfuVg09GRk1kymkewAzFke52JEBl147B4NWi5H3xkfJhK6QLhrrol4swdwpoFmlGpLXYcRodWhUuG9k2hiY3C1z30FzO4XSgii4JIJWjJku4Korn4+JiNWQ8aOEMJQQhhLCUEIYSghDCWEoIQwlhKGEeAD+ApUTddYFzzvQAAAAAElFTkSuQmCC" InformativeScreenshot="43ca13fc336e3d53e3a07aab6fc8ac52.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Demo Web Shop' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1203, 222, 82, 29" ElementType="Text" FriendlyName="'Register'" FullSelectorArgument="&lt;webctrl aaname='Register' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Register' tag='A' type='' check:text='Register' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAAhCAYAAABDcVyOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQQSURBVGhD7ZfPSyJhGMcX2v/CjkGX8LDsKbyFdIjwFJ2iQ0iHJfYke1hkD4J7ENpDYIeFOgR5U5hEiWRCEE0MKzZSkFDwoBRRtMRACd99Xt93Rp2alHDcCeYLA74/ZuaZz/u83/fxA2yZIhusSbLBmiQbrEmywZokG6xJGhrYcuAjYmMGl9ON/UAUtVsx2RTlkGbvCuREezA9NmRkKLYr0R6WhgzWi+yhjIueK4r8twUOeHodl2L+8PU2sO24F3etDjaIsmjr1dzhcFMHiuixht49WFR3kSSwyUhDdHDdn+9C9kzxjHZMIf4ljPK1GNSkoBYLIukc5/PmfCiUSigs0m8tQ59nbOs6h8yKG5KDxTYOacaLzGEDj+3RBr+f3SOu7tj6xyXuDyRQDs3zedN+XPzloyMDqxz42i/f3+sY7VXMS33jiK+GccZsIxbG/gzBcyyhUBWTSM3IUte8BAoByn6HC9In9mEGYBVqs3GPD/kYt6Tsiqv9HPmQ7RoFzWMZ2VWaM+tHkd5fqfPdNFhcAqyD+j1BHtdODndidARgFdyc7iI1zYLw4Y9YUSgyZMqk+GZJZJCqKvJzNPe7THeSrqPYJ2ASAXtoj3Nx2DTPCOxRkMYXehYIKCE7OwEplNPe+cwKBo1Ly/i1zjd1achgX7lo+xa7PrKV8VP/FFLb6iHXudpZJBbpbm+NfruRr/D7OspBZs81AlvZQpza0tctVKqKDlJHerCDxqWBNfDnIYPtrgpo6626qc+FVKwqVrmjq4ioFAyvJRTJ8vih539hJ6geZwCW3ni50fWOSReS5JNnp6rHcunBDhrXiMHqrUChfu5ryUgVLdHLxD+AtmpddBio/pstzlvAcrWUBi5jW5C1Q6zXVl4G2z+u/wyWqYrCMjvNXUgfdfJWPcz6lV+vWUGageoDtkdPt7j48Zmet4YzcYbqwQ4alwXAUtawUotBmA6iosYrDgkWWFN0cdFCsIA9W2gnjcHh9SAAGIFtRryQJr0o6kq32ibbAcZgB47LCmCZ1D8I0s8TzW+1k32GSqIk+TLbsosT1Neb3fVtdm+n/DkLUZuVOa+ART3KF5PVrpEEeT6VQyGCrYvh8hfL4HmkqSRTy63B4rIIWG3FKbjMqegi3WTCSKmF+BiVQotU/J/f9vgx8+paxId4zx+EhG7rP7eCxyrN6fLWmHMecqSEezHO1KI58hyDRuMEXFX/uEYEdvTi5VZyp6dQtYysD/Z0HZLTjcyxaAs9UL0pkT2kj0SHxfQOMvYEGfavbXIB6bZXksdueBFn23tZf8BYR+/CClq3JRS+LdApz/yOLvLK1IaMqycxwYJ6xx5rbdlgTZIN1iTZYE2SDdYk2WBNkg3WJNlgTZIN1iTZYE0R8A+IaLh5MHAs0AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="940,218.666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="23f95b24-9e99-44f0-a1ef-6d646df6b820" Text="user1one@gmail." Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://demowebshop.tricentis.com/login" DesignTimeRectangle="1305, 597, 264, 29" ElementType="InputBox" FriendlyName="'INPUT Email'" FullSelectorArgument="&lt;webctrl id='Email' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Email' tag='INPUT' type='text' aaname='Email:' /&gt;" Guid="0f357e29-0ead-44d7-a7a7-eb4dcc62571f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQwAAAAhCAYAAAAsyZXPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEBSURBVHhe7d3BiYNgFIVRS3BpbbZgsTZiDf7DG/JkSDJy954Dl0CS9Ycr3zQAQoIBxAQDiF3BOM9z7Ps+1nUdy7KMeZ7N7KGrBlQLqgnVhnYFo34QCjP7u2pCtaFdwaia1B+2bRvHcby+BZ6oGlAtqCZUG9oVjH666FhM0/Q74JmqBf2U0a4i1A+1JhjARxden4IBfBAMICYYQEwwgJhgADHBAGKCAcQEA4gJBhATDCAmGEBMMICYYAAxwQBiggHEBAOICQYQEwwgJhhATDCA2L/BeH9rOPBst28Nd5cEaNWA27skLp+Z2fuqCV8vn7mtama9akC1oJrw9bYqwL0xfgCVVqBNPoxiqgAAAABJRU5ErkJggg==" InformativeScreenshot="64bca987bff0ffaeec73fedd1420e831.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Demo Web Shop. Login' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1135, 601, 150, 21" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='Email:' check:text='Email:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAZCAYAAADJ2zdhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFASURBVGhD7dddjoIwFEDh2SSboUuRdRi2YVgFbqJDsbUXuZEa8fKT803uC9PCAydW/zxggNBggtBggtBggtBggtBgIod2b72rKl8tTHOL6830vq3j8y/dm2vYM0KDiQOEpiG0o1FDK4mpv7oYX+O74a+Je8O4a/+yJozz7X28LEz3PSbcTyr/RMvP056FLa0Qmj6u1v4vI9IiSyPXEdoZfHZ01u3wih8moaWX/XKPFKwWwPOauKe/NbO9elSEdjQrhCZfqghABrT4aSn2zdaVh4b9WiG0pWNuoIY2j0sOoZ3LSj8GkvLQuktcFyYF/OXRif3aKLS8Lv1CHRHaaX12dIaJL3at0PJxLK491wXloenfG7EHG4Um9+tDaOeyWWjB5HvaeJ/SqAjtaHJowA8RGkwQGkwQGkwQGkwQGgx4/w+kbYiyLTrT7QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="940,218.666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="23f95b24-9e99-44f0-a1ef-6d646df6b820" Text="Testing@123" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://demowebshop.tricentis.com/login" DesignTimeRectangle="1305, 656, 264, 29" ElementType="InputBoxPassword" FriendlyName="'INPUT Password'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='Password:' /&gt;" Guid="1dfd96b9-d974-451c-a0a8-70a2b6ed08a0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQwAAAAhCAYAAAAsyZXPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACMSURBVHhe7dTBCYAwAMBA9x+2K9RXC0qVDHAHWSHXBIgMA8gMA8j2MMYYknRseQwD4M0wgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgMwwgOxzGJJ0atnDAPg35w2ygjnmjnCzfgAAAABJRU5ErkJggg==" InformativeScreenshot="d2dd18cfc361f7b79d233fdff78fcadf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Demo Web Shop. Login' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1135, 660, 150, 21" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' type='' check:text='Password:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAZCAYAAADJ2zdhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJDSURBVGhD7ZfRlYMgEEW3SZuJpcQ6cmwjJ1UkTbCiwLyBwRCTZT/y7jnzgyMgXAf9cYR0gKKRLlA00gWKRrpA0UgXKBrpgoj2mN04DG6oxWl295BKbG5nrlWNdtHWmNwtpJMSilbnRdEGN164hDUoWh1TtOka2hI3N4VrwxlrGrSnsKrep/LkuhL+OqV8nPv9Mhp93N18in2HUM+0oNYC5wT9wJhb3jI7QzSZw+jmR2j8Qt4QzZIihi3HJ/LSZoIcqU21g1Cxbbdqw1xqeaEfkacSFK3g8NGZFhCPCauypDZYaBgrVaaX86IYWYVK8xFxt7lgXkUqU0h8GTzwQphC1dop2kaLaCiVojyOStF85JsGtObBRq9jFPMOG5oLCXl5xRYZytzimxTmqfuBNaiu0/fSLhocVRulXBiyCXZesYEH8tZrceNPk5tCux87yRPnnQQxKkt+bUfKvX74M1Cn8RutRH0XxYWtvu0e+xvsSB4e23OYh5dO5FraUUYPRftXDoqWVZXIrmgIVK/dTankFdW3FES1e3aeb+/orIuWX2t9pu/kbdFkUaEN+pBN1BVAKuK2ua15G3osuZZVQ7XheA/0hXIaPwPlWuAY0o/MfwkYt/Zc38bho1MtrBHSh30UxpCK2Jq3ocaH70c80vN7lFR5VCqmtRbPnp2ilRwWzaO+09a3G6pG9vOgc7ewxmnNwyMMhXq+sXk1XCL/0WlZCxjfh59DmjtFKxDRCPlDKBrpAkUjXaBopAsUjXSBopEOOPcLLKQ7XwqSdpwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="940,157.333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="23f95b24-9e99-44f0-a1ef-6d646df6b820" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://demowebshop.tricentis.com/login" DesignTimeRectangle="1502, 831, 78, 33" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl aaname='Log in' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log in' tag='INPUT' type='submit' check:text='Log in' /&gt;" Guid="17a9433f-bb56-4954-843c-f8b480af6189" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAlCAYAAADRC77iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAPlSURBVGhD7ZphT9pAGMf3ifsZ5qDfwC1TxLdbYpZsszDci8U3m4KgGJdlKlZAhBqFDITiQHjWa6/Xp3BXqquiyT3JL02f+/e55/6Wa1VegIxIQhoZUUgjIwqfkZeXl6DrOpRKJUkAxCPiFQ5mJBloNBrQ7XbBNE1JAMQj4hU2kxlJXJYmhod4RTxzgxlJblneBRIxxDM3pJH/gTQyIqSRESGNjAhpZEREY2RFg7iigGKxvMMZnxeP2Jc0MiKiMbKWAZU2vLLHGZ8XgxGM6ZrGt5zxCJmfkehucRHdNbkE0sU0KJs5WKbn8fUy9xobXl8Td6mvthIHrYKuvwNzMbK8HkfNT5DIIW0ZtBhHgwg0kvfR5vwA/dzPTKGR19fX4akiI3c54xh9HWJu06tFOiOAkVHZYpayVJtdYjk1YzjC8TmkkLlqujo9hwuvL5RTlCUojJyyeP7YZ3261gyERrbb7fBUv6CGOeOI0qcYbTgJno0kDNhQ6QKXt2zt1jI9n9QaG2w+NV2ZmoPB6wvl2A/HjiIk3bx2x/VbCI1stVrhqaCGC5xxxHd3T1I3wLi9YXlzOIbiKh2Lf4RDol3xtI2hSbUmDMdo0ekyqzEFry+US+7fwg3VmsOQNQUIjby6ugrPadprOM8ZR+SSjk5RM1D1jfWgwIxMwW8rlxdpuwVYofOpqVNUYwJeXzi320P6fLiaAoRGGoYBFxcX4Y6611xiJ1hfTrt7UQK2feM/QYs7NZTVPHSsPDOdaHGdXxqbT02dcOexj7y+TnAO63OQoHk1pfPrBRyFRtbrdfsvv6GOqDkxr2HT0vfOvf1NebPJ6hysLTBtsvgX2lbe3E2yXGztgM53AB8W6PUWaqoUqq9EjuZL2Eisx0ae8OsFHIVGnp2dQa1WC3cspUIYuQjfLP2fm5HvCTmJ/QAY9uy6vSF6AGFexdl8qnYcqq9EluaPUS6H9VnPSKsmt17AUWhkpVJhVKvV4HPUnBjr40n0rT7YbxzoyeuS3Lenh0GX1u8O7HP2ECIs/oD+CD9hj8T9HWEj6Tgn5+i3kZFHjpYyc/3WudBI8j+I0DRNx5zAGECH6pt9sXrUb6LaTTB50tGe92DQDpF+AtTXoBOQs+lYHTrh7yEcczFSdI1/YTrk3720zbINc9/5Bh3Qv76leRUy1YBFPzsjH4r8e3hJjeRivV/W77Hoh+BJG+lsAd5+6MP+9XIEZpN/7WPztO/IWVvGyIQm77o58LSNtPH2Ll+QvZKrnw/PwMjngTQyIrhG8oSS2bjBjCTfrCJv7DyxZBriFffbaCTIABGRW1YihniETSThM1LGfQPgH52XWT1K/xeXAAAAAElFTkSuQmCC" InformativeScreenshot="d7c039ce8685e26a8ad2cf4f561a8369.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Demo Web Shop. Login' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1169, 718, 150, 21" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Remember me?' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Remember me?' tag='LABEL' type='' check:text='unchecked' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAZCAYAAADJ2zdhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJDSURBVGhD7ZhhksIgDIX3kr2MPYo9h9NrOD2FXoKlLUICCbYNRkfzzeTHUijJ4wFd/5xhKGBGM1QwoxkqmNEMFcxohgpmNEMFbLTr4Lquq8ZwDX2/lOkcaj2N7hbavp3bpS/Wub+0rX630eZoncQn8WtGi/VS0VCDQ0brusFNYci38VNGA+uNDg/Q3uoGY4zWu/Ee2gDpiM2e30fXh8TWKI2IFjDr/ygG7y7KzDc3nmCfUgjpPLXx9Em+L6cJXFPczSCtYWWnVqFtZXJDGNPq9pIbjT0F8TuwMHn0rs9EWQIJkIrPA4ohnac+3scZ2VKQE63xjJZWHPCbLTfnUY5dnbEoUFBcALCTwKJA8WKxaL4kfOqbdirVlgSh+knn8cHkX54qB3KqQPZ/gVYUcG68qWQcMBrYibF/tjtje71430oY1VO8N/XDC5Xaa4u/fR5u/EyegzQnHi2tctK8+Vg5O4xWigSPWDqIBWSOeFRYLl7xDVjGY7xoHg89fiY7qcU58WhphQDjWl2XkOffaMh82GxmtPA3E/WceN5itPiebafuXrb9MxDbfcDiuf4EMgMw/QiaGa0QPH+HNCceLa002WY0Dzy9UgGpKPjdQAn1EgPU+onn8UHV1CwnnnY11PNCxOfvPNEW4O8y6Xnt+oR3vVS86pXwxOTHFokJMJcsJx4trRCfYzQPLACKUBRWjheLt1D+CInGeZoZbR6f1ZXPtXI0Jx4trRCqRjOMF2FGM1QwoxkqmNEMFcxohgpmNEMB5/4BC8B7EF9CcYwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[invalidEmail]" sap:VirtualizedContainerService.HintSize="940,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="649c825d-f635-402a-865c-7180b6072f70" InformativeScreenshot="4f5f1ca16e5f6ac02ba3d9cefde963ca" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;span&amp;gt;span' isleaf='1' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="940,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Invalid Element exist: &quot;+invalidEmail.ToString]" />
+            <If Condition="[invalidEmail=True]" sap:VirtualizedContainerService.HintSize="940,1344" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="518,1182" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="proKey" />
+                    <Variable x:TypeArguments="x:String" Name="issueID" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="476,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;invalid email raise issue on jira&quot;]" />
+                  <Sequence DisplayName="take screenshot_invalid email" sap:VirtualizedContainerService.HintSize="476,575.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="ui:Image" Name="img" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'editable text'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[img]">
+                      <ui:TakeScreenshot.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e5134179-ef24-4c6e-8780-0e0da1bf1152" InformativeScreenshot="4dc415af90cada0e18220367f7f4b7da" Selector="&lt;html app='chrome.exe' title='Demo Web Shop. Login' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' class='returning-wrapper' parentclass='customer-blocks' title='Demo Web Shop. Login' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TakeScreenshot.Target>
+                    </ui:TakeScreenshot>
+                    <ui:SaveImage DisplayName="Save Image" FileName="C:\Users\Sankritya Pathak\Documents\UiPath\PracticeTestAutoProject\invalidEmail.png" sap:VirtualizedContainerService.HintSize="434,134.666666666667" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[img]" />
+                    <ui:CopyFile ContinueOnError="{x:Null}" Destination="C:\Users\Sankritya Pathak\Documents\UiPath\PracticeTestAutoProject\img\img.png" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="invalidEmail.png" />
+                  </Sequence>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="476,113.333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Uitilities\JiraUtil.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="issueID">
+                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="issueID" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="summary">
+                        <Literal x:TypeArguments="x:String">Invalid Email</Literal>
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="desc">
+                        <Literal x:TypeArguments="x:String" xml:space="preserve">User entered invalid email </Literal>
+                      </InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="476,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Issue Id in Current workflow: &quot;+issueID]" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,144" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uja:JiraScope ClientID="{x:Null}" ClientSecret="{x:Null}" Connection="{x:Null}" ContinueOnError="{x:Null}" JiraConnection="{x:Null}" ApiToken="[(New System.Net.NetworkCredential(&quot;&quot;, &quot;CyClLVwsL5QtRbm71s397938&quot;)).SecurePassword]" AuthenticationType="Api Token" DisplayName="Jira Scope" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="JiraScope_1" ServerURL="https://testingxperts1.atlassian.net/" UserName="sankritya95@gmail.com">
+                          <uja:JiraScope.Body>
+                            <ActivityAction x:TypeArguments="usa:IObjectContainer">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="ScopeActivity" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,225.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uja:AddAttachment Attachment="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Add Attachment" FilePath="C:\Users\Sankritya Pathak\Documents\UiPath\PracticeTestAutoProject\img\img.png" sap:VirtualizedContainerService.HintSize="334,133.333333333333" sap2010:WorkflowViewState.IdRef="AddAttachment_1" IssueKey="[issueID]">
+                                  <uja:AddAttachment.TelemetryProperties>
+                                    <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                                  </uja:AddAttachment.TelemetryProperties>
+                                </uja:AddAttachment>
+                              </Sequence>
+                            </ActivityAction>
+                          </uja:JiraScope.Body>
+                          <uja:JiraScope.TelemetryProperties>
+                            <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                          </uja:JiraScope.TelemetryProperties>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uja:JiraScope>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,188" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93.3333333333333" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;user entered Correct email &quot;]" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="91c6f52d2c5c6c4383bae1d19b33ba67.png" Selector="&lt;html app='chrome.exe' title='Demo Web Shop'/&gt;" Url="http://demowebshop.tricentis.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
